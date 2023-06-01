@@ -8,6 +8,7 @@ import netgraph
 class Referrer:
     name: str
     referral_percentage: float
+    balance: float = 0.0
     id: str = field(default_factory=lambda: str(uuid4()))
 
 @dataclass
